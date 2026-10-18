@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudForge | DevOps & Cloud</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 24px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #243047;
+        }
+
+        .logo {
+            color: #60a5fa;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        header a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px 80px;
+        }
+
+        .tag {
+            color: #60a5fa;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 6vw, 62px);
+            line-height: 1.15;
+            margin: 20px 0;
+        }
+
+        h1 span {
+            color: #60a5fa;
+        }
+
+        .hero p {
+            max-width: 620px;
+            margin: 0 auto;
+            color: #aab7ca;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            background: #2563eb;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 7px;
+            text-decoration: none;
+        }
+
+        .services {
+            padding: 50px 8% 90px;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            padding: 28px;
+            background: #121c30;
+            border: 1px solid #293750;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            color: #60a5fa;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #aab7ca;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #243047;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">CloudForge</div>
+        <a href="/health">Health Check</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="tag">CLOUD • DEVOPS • AUTOMATION</div>
+
+            <h1>Build. Deploy.<br>
+                <span>Scale with Confidence.</span>
+            </h1>
+
+            <p>
+                Exploring modern cloud infrastructure, containerization,
+                secure deployments, and DevOps automation.
+            </p>
+
+            <a class="button" href="#services">Explore Our Platform</a>
+        </section>
+
+        <section class="services" id="services">
+            <h2>Built for Modern Infrastructure</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Cloud Infrastructure</h3>
+                    <p>
+                        Deploy applications on AWS EC2 and learn
+                        how cloud servers support modern websites.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Container Deployment</h3>
+                    <p>
+                        Package applications with Docker for
+                        consistent and portable deployments.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Secure Networking</h3>
+                    <p>
+                        Explore Linux, Nginx, security groups,
+                        and reliable application access.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        CloudForge — A DevOps Portfolio Project<br>
+        Flask | Docker | AWS EC2 | Nginx
+    </footer>
+</body>
+</html>
